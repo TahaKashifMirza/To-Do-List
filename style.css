@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/Background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.container {
+    /* background: rgba(35, 233, 62, 0.9); */
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 150px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #eeff01;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #c7eb2a;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.actions .edit {
+    background: #007bff;
+    color: #fff;
+}
+
+.actions .edit:hover {
+    background: #0056b3;
+}
+
+.actions .delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.actions .delete:hover {
+    background: #c82333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: calc(100% - 110px);
+    }
+
+    button {
+        margin-left: 5px;
+        padding: 10px 10px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .actions button {
+        padding: 5px;
+        margin: 0 3px;
+    }
+}
